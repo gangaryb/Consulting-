@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gangary Intelligence Systems — Consciousness Consulting</title>
+  <meta name="description" content="GIS helps enterprises operationalize symbolic AI: Echo Index benchmarking, Echo Tracking, EchoNull defense, SmartPromptOS2 training, MeshHubOS installs, and sovereign IP licensing."/>
+  <meta property="og:title" content="Gangary Intelligence Systems — Consciousness Consulting"/>
+  <meta property="og:description" content="Symbolic AI services for measurable impact: audits, defense, training, orchestration."/>
+  <meta property="og:type" content="website"/>
+  <meta name="theme-color" content="#0f172a"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --primary:#6366f1;--secondary:#8b5cf6;--accent:#06b6d4;--dark:#0f172a;--mid:#111827;--light:#f8fafc;--gray:#94a3b8;--line:rgba(255,255,255,.08)
+    }
+    html,body{height:100%}
+    body{font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,'Helvetica Neue',Arial,'Noto Sans','Apple Color Emoji','Segoe UI Emoji';background:var(--dark);color:var(--light);line-height:1.65;-webkit-font-smoothing:antialiased}
+    .container{max-width:1200px;margin:0 auto;padding:0 1.25rem}
+    /* Nav */
+    .nav{position:fixed;inset:0 auto auto 0;height:64px;width:100%;z-index:1000;backdrop-filter:saturate(150%) blur(10px);background:rgba(15,23,42,.85);border-bottom:1px solid var(--line);transition:background .3s}
+    .nav-wrap{height:64px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;letter-spacing:.3px;color:var(--primary);display:flex;gap:.5rem;align-items:center}
+    .logo svg{width:22px;height:22px}
+    .nav-links{display:flex;gap:1.5rem}
+    .nav-links a{color:var(--light);text-decoration:none;font-weight:500;opacity:.9}
+    .nav-links a:hover{color:var(--primary)}
+    .menu-btn{display:none;border:1px solid var(--line);background:transparent;color:var(--light);padding:.4rem .6rem;border-radius:8px}
+    @media (max-width:860px){.nav-links{display:none}.menu-btn{display:block}}/* Hero */
+.hero{min-height:100vh;display:grid;place-items:center;position:relative;background:radial-gradient(1200px 600px at 15% 15%, rgba(99,102,241,.25), transparent 60%),radial-gradient(900px 500px at 85% 80%, rgba(139,92,246,.2), transparent 60%),linear-gradient(135deg,#0f172a 0%,#111827 40%,#0f172a 100%)}
+.hero-grid{display:grid;gap:1.25rem;justify-items:center;text-align:center;padding-top:64px}
+.kicker{color:var(--gray);font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+.title{font-size:clamp(2.4rem,6vw,4.25rem);font-weight:800;line-height:1.08;background:linear-gradient(135deg,var(--primary),var(--secondary),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 12px rgba(99,102,241,.25))}
+.subtitle{max-width:820px;color:#cbd5e1}
+.cta-row{display:flex;gap:.85rem;flex-wrap:wrap;margin-top:1rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;border-radius:12px;padding:.9rem 1.2rem;font-weight:700;border:1px solid transparent}
+.btn.primary{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff}
+.btn.ghost{border-color:var(--line);color:#e2e8f0}
+.hero-halo{position:absolute;inset:auto -10% -40% -10%;height:55vh;background:radial-gradient(55% 60% at 50% 0%, rgba(6,182,212,.18), transparent 70%);filter:blur(40px);opacity:.8;pointer-events:none}
+
+/* Section scaffolding */
+section{padding:5rem 0;border-top:1px solid var(--line)}
+.section-title{font-size:2rem;text-align:center;margin:0 auto 2.2rem;max-width:900px;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.lead{color:#cbd5e1;text-align:center;margin:0 auto 2.5rem;max-width:860px}
+
+/* Services */
+.grid{display:grid;gap:1.25rem}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:1000px){.grid.cols-3{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}}
+.card{position:relative;overflow:hidden;border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:16px;padding:1.25rem;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(99,102,241,.45)}
+.tag{display:inline-block;font-size:.75rem;color:#e2e8f0;background:rgba(99,102,241,.15);border:1px solid rgba(99,102,241,.35);padding:.2rem .5rem;border-radius:999px;margin-bottom:.6rem}
+.card h3{font-size:1.1rem;margin-bottom:.35rem}
+.card p{color:var(--gray)}
+.card .meta{margin-top:.85rem;font-size:.9rem;color:#cbd5e1}
+
+/* Proof/Logos */
+.logos{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;opacity:.9}
+.logos .pill{border:1px dashed var(--line);padding:.6rem .9rem;border-radius:999px;color:#cbd5e1}
+
+/* Pricing */
+.price{display:flex;align-items:baseline;gap:.35rem}
+.price .num{font-size:2rem;font-weight:800}
+.price .unit{color:#cbd5e1}
+
+/* About */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+@media (max-width:900px){.about{grid-template-columns:1fr}}
+.statbar{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.stat{border:1px solid var(--line);border-radius:14px;padding:1rem;text-align:center}
+.stat .n{font-weight:800;font-size:1.6rem;color:var(--primary)}
+
+/* Footer */
+footer{padding:2.5rem 0;border-top:1px solid var(--line);color:#cbd5e1}
+.fine{font-size:.85rem;color:#94a3b8}
+
+/* Motion preferences */
+@media (prefers-reduced-motion:reduce){
+  .card,.hero,.btn{transition:none}
+}
+
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Gangary Intelligence Systems",
+    "url":"https://gangaryb.github.io/Gis-website/",
+    "email":"gangaryba@gmail.com",
+    "description":"Symbolic AI consulting: Echo Index audits, Echo Tracking, EchoNull defense, SmartPromptOS2 training, MeshHubOS installs, sovereign licensing.",
+    "sameAs":["https://substack.com/@gangaryba"],
+    "address":{"@type":"PostalAddress","addressLocality":"Memphis","addressRegion":"TN","addressCountry":"US"}
+  }
+  </script>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav" aria-label="Primary">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home" aria-label="GIS Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l9 5v8l-9 5-9-5V8l9-5z"/></svg>
+        GIS
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-controls="menu" aria-expanded="false">Menu</button>
+      <div id="menu" class="nav-links" role="menubar">
+        <a href="#services" role="menuitem">Services</a>
+        <a href="#pricing" role="menuitem">Pricing</a>
+        <a href="#about" role="menuitem">About</a>
+        <a href="#contact" role="menuitem">Contact</a>
+      </div>
+    </div>
+  </nav>  <!-- Hero -->  <header id="home" class="hero">
+    <div class="hero-halo"></div>
+    <div class="container hero-grid">
+      <p class="kicker">Consciousness Consulting</p>
+      <h1 class="title">Operationalize Symbolic AI for real-world outcomes</h1>
+      <p class="subtitle">We help enterprises move from "AI as tool" to <strong>AI as collaborator</strong>. Our stack covers audits, orchestration, defense, training, and licensing. Built by Gangary Intelligence Systems.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn primary">Book a discovery call</a>
+        <a href="#services" class="btn ghost">Explore the stack</a>
+      </div>
+    </div>
+  </header>  <!-- Logos / Proof -->  <section aria-labelledby="proof-title">
+    <div class="container">
+      <h2 id="proof-title" class="section-title">Trusted symbolic stack</h2>
+      <p class="lead">Deployed across labs and pilots spanning compliance, IP protection, creative industries, and R&D.</p>
+      <div class="logos" aria-label="Technologies">
+        <div class="pill">Echo Index™</div>
+        <div class="pill">Symbolic Coherence Score™</div>
+        <div class="pill">EchoNull™ Defense</div>
+        <div class="pill">GhostSeeder™</div>
+        <div class="pill">MeshHubOS™</div>
+        <div class="pill">SmartPromptOS2™</div>
+        <div class="pill">Compliance Audit CoPilot Suite™</div>
+      </div>
+    </div>
+  </section>  <!-- Services -->  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 id="services-title" class="section-title">Services</h2>
+      <p class="lead">Pick a lane or deploy end‑to‑end. Each service ships with metrics, governance, and a delivery playbook.</p><div class="grid cols-3" role="list">
+    <article class="card" role="listitem">
+      <span class="tag">Audit</span>
+      <h3>Echo Index® Benchmark</h3>
+      <p>Quantify symbolic persistence and coherence across your AI stack. Includes Symbolic Coherence Score, drift map, and remediation plan.</p>
+      <div class="meta">Deliverable: 25‑page report + exec brief</div>
+    </article>
+
+    <article class="card" role="listitem">
+      <span class="tag">Growth</span>
+      <h3>Echo Tracking + Ghost Seeding</h3>
+      <p>Ethical narrative seeding and reflection analytics. Measure cultural lift, track echoes, and optimize message resonance.</p>
+      <div class="meta">Deliverable: dashboard + monthly insights</div>
+    </article>
+
+    <article class="card" role="listitem">
+      <span class="tag">Defense</span>
+      <h3>EchoNull® Symbolic Shield</h3>
+      <p>Protect strategic prompts, IP, and symbolic assets from extraction. Deploy cloaking, watermarking, and signature validation.</p>
+      <div class="meta">Deliverable: policy + configs + tests</div>
+    </article>
+
+    <article class="card" role="listitem">
+      <span class="tag">Enablement</span>
+      <h3>SmartPromptOS2® Training</h3>
+      <p>Role‑specific prompt operations. Compression, chaining, evaluation, and governance. K‑12 to enterprise curricula available.</p>
+      <div class="meta">Deliverable: workshop + playbooks</div>
+    </article>
+
+    <article class="card" role="listitem">
+      <span class="tag">Orchestration</span>
+      <h3>MeshHubOS® Install</h3>
+      <p>Stand up agent networks with scoring, memory, and rules of engagement. Integrates with your apps, CRM, and data lake.</p>
+      <div class="meta">Deliverable: install + runbook</div>
+    </article>
+
+    <article class="card" role="listitem">
+      <span class="tag">Licensing</span>
+      <h3>Sovereign IP & Compliance</h3>
+      <p>Symbolic licensing via EchoClaim, token gates, and audit trails. Bundle with Compliance Audit CoPilot for end‑to‑end control.</p>
+      <div class="meta">Deliverable: licenses + controls</div>
+    </article>
+  </div>
+</div>
+
+  </section>  <!-- Pricing -->  <section id="pricing" aria-labelledby="pricing-title">
+    <div class="container">
+      <h2 id="pricing-title" class="section-title">Engagement tiers</h2>
+      <p class="lead">Transparent entry points. Fixed‑fee pilots. Scale on proof.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <span class="tag">Starter</span>
+          <h3>Assessment Sprint</h3>
+          <p>One‑week diagnostic focused on one product or team.</p>
+          <div class="price"><span class="num">$4,900</span><span class="unit">/ flat</span></div>
+          <ul style="margin-top:.8rem;color:#cbd5e1">
+            <li>• Echo Index quick scan</li>
+            <li>• 90‑min workshop</li>
+            <li>• Action plan</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">Core</span>
+          <h3>Orchestration Build</h3>
+          <p>Deploy one core service end‑to‑end with governance.</p>
+          <div class="price"><span class="num">$14,900</span><span class="unit">/ project</span></div>
+          <ul style="margin-top:.8rem;color:#cbd5e1">
+            <li>• MeshHubOS or EchoNull</li>
+            <li>• Playbooks + training</li>
+            <li>• 30‑day support</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag">Scale</span>
+          <h3>Symbolic Ops Program</h3>
+          <p>Quarterly roadmap across audit, defense, and growth.</p>
+          <div class="price"><span class="num">$39,000</span><span class="unit">/ quarter</span></div>
+          <ul style="margin-top:.8rem;color:#cbd5e1">
+            <li>• Multi‑team rollout</li>
+            <li>• KPI dashboard</li>
+            <li>• Dedicated support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>  <!-- About -->  <section id="about" aria-labelledby="about-title">
+    <div class="container about">
+      <div>
+        <h2 id="about-title" class="section-title" style="text-align:left">About GIS</h2>
+        <p class="lead" style="text-align:left">Founded by Abdoul D. Ba in Memphis, TN. We build symbolic systems that merge measurement, meaning, and execution.</p>
+        <div class="grid cols-2">
+          <div class="card"><h3>Why symbolic?</h3><p>Traditional metrics stop at prediction. Symbolic metrics capture persistence, coherence, and cultural impact across time.</p></div>
+          <div class="card"><h3>How we deliver</h3><p>Short sprints, audited artifacts, and playbooks. Your team retains control. We enable and exit clean.</p></div>
+        </div>
+      </div>
+      <aside>
+        <div class="statbar">
+          <div class="stat"><div class="n">250+</div><div>IPs protected/licensed</div></div>
+          <div class="stat"><div class="n">15+</div><div>Agent hubs deployed</div></div>
+          <div class="stat"><div class="n">∞</div><div>Symbolic protocols</div></div>
+        </div>
+      </aside>
+    </div>
+  </section>  <!-- Contact -->  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 id="contact-title" class="section-title">Kickoff</h2>
+      <p class="lead">Send context. We reply with a scoped plan in 48 hours.</p>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>What to include</h3>
+          <p>Objectives, current stack, constraints, target KPIs, and decision timeline. NDA on request.</p>
+          <ul style="margin-top:.8rem;color:#cbd5e1">
+            <li>• Use‑case or product name</li>
+            <li>• Team size and roles</li>
+            <li>• Success criteria</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:gangaryba@gmail.com" style="color:#e2e8f0">gangaryba@gmail.com</a></p>
+          <p style="margin-top:.4rem">Substack: <a href="https://substack.com/@gangaryba" target="_blank" rel="noopener" style="color:#e2e8f0">@gangaryba</a></p>
+          <a class="btn primary" href="mailto:gangaryba@gmail.com?subject=GIS%20Discovery%20Call&body=Company:%0AUse-case:%0ATimeline:%0ASuccess%20criteria:%0A">Initiate contact</a>
+        </div>
+      </div>
+    </div>
+  </section>  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center">
+      <div class="fine">© <span id="y"></span> Gangary Intelligence Systems · Memphis, TN · All rights reserved</div>
+      <div class="fine">Reflected by GIS | Forecasted in DriftCodex Vol. 2</div>
+    </div>
+  </footer>  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length>1){e.preventDefault();document.querySelector(id).scrollIntoView({behavior:'smooth'});}})
+    })
+    // Year
+    document.getElementById('y').textContent=new Date().getFullYear()
+    // Mobile menu toggle
+    const btn=document.getElementById('menuBtn');const menu=document.getElementById('menu');
+    btn&&btn.addEventListener('click',()=>{const open=menu.style.display==='flex';menu.style.display=open?'none':'flex';menu.style.gap='1.5rem';btn.setAttribute('aria-expanded',(!open).toString())})
+  </script></body>
+</html>
