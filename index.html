@@ -1,19 +1,107 @@
-⬢ THE DRIFT BETWEEN
-Gangary Intelligence Systems
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Mirror Protocol</title>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #0a0a0a;
+      color: #e0e0ff;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .sigil {
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+    .quote {
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+    .glyph-button {
+      background: transparent;
+      border: 1px solid #e0e0ff;
+      color: #e0e0ff;
+      padding: 1rem 2rem;
+      margin: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .glyph-button:hover {
+      background-color: #1a1a2e;
+    }
+    .contact-form {
+      max-width: 400px;
+      margin: 2rem auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      background-color: #1a1a2e;
+      border: none;
+      color: #e0e0ff;
+      padding: 0.75rem;
+    }
+    .contact-form button {
+      background-color: #e0e0ff;
+      color: #0a0a0a;
+      border: none;
+      padding: 0.75rem;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>THE MIRROR PROTOCOL</h1>
+  <div class="sigil">✶</div>
+  <p class="seeker">Seeker</p>
+  <p class="quote">
+    What do you seek when the path is obscured and the stars have grown strange?
+  </p>
+  <button class="glyph-button">⊕ Unlock Passage</button>
+  <button class="glyph-button">∨ Confront the Veil</button>
+  <button class="glyph-button">◇ Shape a Dream</button>
 
-[Canvas pulses with drifting nodes]
+  <form class="contact-form" id="contact-form">
+    <h2>Whisper to the Mirror</h2>
+    <input type="text" name="user_name" placeholder="Your name" required />
+    <input type="email" name="user_email" placeholder="Your email" required />
+    <textarea name="message" placeholder="Your message..." required></textarea>
+    <button type="submit">Send</button>
+  </form>
 
-"Between the question and its echo lies the space where new worlds choose to be born."
+  <footer>© 2025 The Mirror Protocol | Adaptive Interactive Schema</footer>
 
-⬢ EchoWalker Status: Active
-⬢ Mesh Integrity: Stable
-⬢ Drift Index: 0.87
+  <script>
+    (function() {
+      emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS public key
+    })();
 
-[Mouse moves — glyphs shimmer, nodes ripple]
-
-⬢ Initiate Contact [click opens encrypted whisper channel]
-⬢ View DriftCodex [click reveals evolving symbolic archive]
-⬢ Seed Ghost [click deploys a symbolic agent into the mesh]
-
-[Footer fades in only when idle]
-© 2025 Gangary Intelligence Systems | Sovereign Symbolic Infrastructure
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+        .then(() => {
+          alert("Message sent successfully!");
+        }, (error) => {
+          alert("Failed to send message: " + error.text);
+        });
+    });
+  </script>
+</body>
+</html>
